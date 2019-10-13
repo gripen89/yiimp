@@ -2,7 +2,7 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-void neoscrypt_xaya(const unsigned char *input, unsigned char *output);
+void neoscrypt_xaya(const unsigned char *input, unsigned char *output, unsigned int profile);
 
 #define SCRYPT_BLOCK_SIZE 64
 #define SCRYPT_HASH_BLOCK_SIZE 64
