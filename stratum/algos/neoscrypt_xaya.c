@@ -570,7 +570,7 @@ static void neoscrypt_blkmix(uint *X, uint *Y, uint r, uint mixmode) {
 
 /* NeoScrypt core engine:
  * N = 128, r = 2, p = 1, salt = password */
-void neoscrypt(const uchar *password, uchar *output) {
+void neoscrypt_xaya(const uchar *password, uchar *output) {
     uint N = 128, r = 2, mixmode = 0x14, stack_align = 0x40;
     uint i, j;
     uint *X, *Y, *Z, *V;
