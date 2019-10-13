@@ -108,12 +108,19 @@ static void neoscrypt_hash(const char* input, char* output, uint32_t len)
 	neoscrypt((unsigned char *)input, (unsigned char *)output, 0x80000620);
 }
 
+static void neoscrypt_xaya_hash(const char* input, char* output, uint32_t len)
+{
+	neoscrypt_xaya((unsigned char *)input, (unsigned char *)output);
+}
+
 YAAMP_ALGO g_algos[] =
 {
 	{"sha256", sha256_double_hash, 1, 0, 0},
 	{"scrypt", scrypt_hash, 0x10000, 0, 0},
 	{"scryptn", scryptn_hash, 0x10000, 0, 0},
 	{"neoscrypt", neoscrypt_hash, 0x10000, 0, 0},
+	{"neoscrypt_xaya", neoscrypt_xaya_hash, 0x10000, 0, 0},
+	
 
 	{"c11", c11_hash, 1, 0, 0},
 	{"x11", x11_hash, 1, 0, 0},
