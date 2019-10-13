@@ -1,5 +1,6 @@
 #ifndef LYRA2VC0BAN_H
 #define LYRA2VC0BAN_H
+#include <stdint.h>
 
 #ifdef __cplusplus
 extern "C" {
