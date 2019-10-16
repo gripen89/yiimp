@@ -110,7 +110,7 @@ static void neoscrypt_hash(const char* input, char* output, uint32_t len)
 
 static void neoscrypt_xaya_hash(const char* input, char* output, uint32_t len)
 {
-	neoscrypt_xaya((unsigned char *)input, (unsigned char *)output);
+	/*neoscrypt_xaya((unsigned char *)input, (unsigned char *)output);*/
 }
 
 YAAMP_ALGO g_algos[] =
